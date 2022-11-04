@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Herfa</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="img/logo.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!--===============================================================================================-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	
+	<style>
+	#counts {
+		/*background-color: #ededec;
+        padding: 50px;*/
+    }
+	.count{
+		background-color: white;
+		padding: 25px;
+		border-radius: 50% 20% / 10% 40%;
+	
+
+	}
+
+    #counts .counter {
+        font-size: 30px;
+    }
+
+    #counts p {
+        font-size: 25px;
+        font-weight: bold;
+				color: #d61c22;
+        letter-spacing: 3px;
+    }
+	/*###############################################*/
+		footer {
+			background-color: #363c4c;
+		}
+
+			footer h6 {
+				color: #d61c22;
+			}
+
+			footer .logo {
+				color: #d61c22;
+				font-family: 'Peralta', cursive;
+				letter-spacing: 7px;
+				font-size: 40px;
+			}
+
+			footer a {
+				text-decoration: none;
+				color: white;
+			}
+
+				footer a:hover {
+					color: #d61c22;
+				}
+
+		#Copyright a:hover {
+			color: white;
+		}
+
+	</style>
+	
+	
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="index.html" class="text-danger h1 fw-bold fw-bolder" style="font-family: 'Peralta', cursive;letter-spacing:7px; ">
+							Herfa
+						</a>
+					</div>
+
+					<!-- Menu -->
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+							<ul class="main_menu">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+
+								<li>
+									<a href="#">Categories</a>
+								</li>
+
+								<li>
+									<a href="#">About</a>
+								</li>
+
+								<li>
+									<a href="#">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<a href="#">Login</a> 
+						<a href="#">&nbsp;&nbsp; /&nbsp;&nbsp;</a>
+						<a href="#">SignUp</a>
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<!-- Button Hide sidebar -->
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70">
+			<li class="t-center m-b-13">
+				<a href="index.html">Home</a>
+			</li>
+
+			<li class="t-center m-b-13">
+				<a href="#">Categories</a>
+			</li>
+
+			<li class="t-center m-b-13">
+				<a href="#">About</a>
+			</li>
+
+			<li class="t-center m-b-13">
+				<a href="#">Contact</a>
+			</li>
+			<li class="t-center m-b-33">
+				<a href="#" >Login</a>
+				<a href="#" class="disabled">&nbsp;&nbsp; /&nbsp;&nbsp;</a>
+				<a href="#" >SignUp</a>
+			</li>
+		</ul>
+
+		<!-- - -->
+		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+			<!-- - -->
+			<h4 class="m-b-33 " style="font-family: 'Peralta', cursive;letter-spacing:7px; color:red; font-size:50px;">
+				Herfa
+			</h4>
+
+			<!-- Gallery -->
+			
+		</div>
+	</aside>
+
+	<!-- Slide1 -->
+	<section class="section-slide">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1 item1-slick1" style="background-image: url(img/Slider-Bg01.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+							Welcome to our site
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37  text-danger" data-appear="fadeInUp">
+							Herfa
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
+							<!-- Button1 -->
+							<a href="#sectionAboutUs" class="btn1 flex-c-m size1 txt3 trans-0-4">
+								get started
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item2-slick1" style="background-image: url(img/Slider-Bg02.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
+							مرحبا بك في موقعنا
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37  text-danger" data-appear="lightSpeedIn">
+							Herfa
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
+							<!-- Button1 -->
+							<a href="#sectionAboutUs" class="btn1 flex-c-m size1 txt3 trans-0-4">
+								get started
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item3-slick1" style="background-image: url(img/Slider-Bg03.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+							Bienvenido a nuestro sitio
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37  text-danger" data-appear="rotateInUpRight">
+							Herfa
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
+							<!-- Button1 -->
+							<a href="#sectionAboutUs" class="btn1 flex-c-m size1 txt3 trans-0-4">
+								get started
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap-slick1-dots"></div>
+		</div>
+	</section>
+
+	<!-- Welcome -->
+	<section class="section-welcome bg1-pattern p-t-120 p-b-105" id="sectionAboutUs" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 p-t-45 p-b-30">
+					<div class="wrap-text-welcome t-center">
+						<span class="tit2 t-center h1" style="font-size:50px;">
+							Herfa
+						</span>
+
+						<h3 class="tit3 t-center m-b-35 m-t-5">
+							Welcome
+						</h3>
+
+						<p class="t-center m-b-22 size3 m-l-r-auto">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+
+						<a href="about.html" class="txt4">
+							About Us
+							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-6 p-b-30">
+					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+						<img src="img/logo.png" alt="IMG-OUR">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ======= Counts Section ======= -->
+		<div class="container" id="counts">
+
+			<div class="row">
+
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 text-center count">
+					<span class="counter" data-goal="6">0</span>
+					<p># of categories</p>
+				</div>
+
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  text-center count">
+					<span class="counter" data-goal="8">0</span>
+					<p># of products</p>
+				</div>
+
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12  text-center count">
+					<span class="counter" data-goal="8">0</span>
+					<p># of clients</p>
+				</div>
+
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 text-center count">
+					<span class="counter" data-goal="160.19">0</span>
+					<p>Precios Medios</p>
+				</div>
+
+			</div>
+
+		</div><!-- End Counts Section -->
+	</section>
+
+	<!-- Intro -->
+	<section class="section-intro">
+		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(img/Intro1-HomePage.jpg);">
+			<span class="tit2 p-l-15 p-r-15">
+				
+			</span>
+
+			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
+				
+			</h3>
+		</div>
+
+		<div class="content-intro bg-white p-t-77 p-b-133">
+			<div class="container">
+			<div class="title-section-ourmenu t-center m-b-22">
+				<span class="tit2 t-center" style="font-size:50px;">
+					Discover
+				</span>
+
+				<h3 class="tit5 t-center m-t-2">
+					Our Products
+				</h3>
+				<a href="#" class="txt4">
+				  View all products
+				  <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+				</a>
+			</div>
+				<div class="row">
+					<div class="col-md-4 p-t-30">
+						<div class="card border border-danger rounded">
+
+							<div class="hov-img-zoom">
+								<img src="img/117beac1-b8f3-4418-972f-0487a737f7f5_EngravingP1.jfif" alt="IMG-INTRO" class="card-img-top" width="300" height="350">
+							</div>
+
+
+							<div class="card-body">
+
+
+								<div class=" d-flex justify-content-between">
+									<h5 class="card-title">Ring</h5>
+									
+								</div>
+								<div class=" d-flex justify-content-between">
+									<p class="card-title">
+								
+
+													<b style="color:green;">256 JD</b>
+											
+											
+										
+
+									</p>
+									
+								</div>
+								
+							    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+									
+							
+
+									
+								</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-4 p-t-30">
+						<div class="card border border-danger rounded">
+
+							<div class="hov-img-zoom">
+								<img src="img/1409f22e-37e3-4fd8-84c8-6d81fe60c158_Bouquet1.jpg" alt="IMG-INTRO" class="card-img-top" width="300" height="350">
+							</div>
+
+
+							<div class="card-body">
+
+
+								<div class=" d-flex justify-content-between">
+									<h5 class="card-title">Bouquet</h5>
+									
+								</div>
+								<div class=" d-flex justify-content-between">
+									<p class="card-title">
+								
+
+													<b><del style="color:red;">150 </del></b><b style="color:green;">256 JD</b>
+											
+											
+										
+
+									</p>
+									
+								</div>
+								
+							    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+									
+							
+
+									
+								</div>
+
+						</div>
+					</div>
+					
+					<div class="col-md-4 p-t-30">
+						<div class="card border border-danger rounded">
+
+							<div class="hov-img-zoom">
+								<img src="img/c42dab03-03b3-4de9-9aea-eccc95d583ba_ww.jpg" alt="IMG-INTRO" class="card-img-top" width="300" height="350">
+							</div>
+
+
+							<div class="card-body">
+
+
+								<div class=" d-flex justify-content-between">
+									<h5 class="card-title">Calligraphy painting</h5>
+									
+								</div>
+								<div class=" d-flex justify-content-between">
+									<p class="card-title">
+								
+
+													<b style="color:green;">125.5 JD</b>
+											
+											
+										
+
+									</p>
+									
+								</div>
+								
+							    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+									
+							
+
+									
+								</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our menu -->
+	<section class="section-ourmenu bg2-pattern p-t-115 p-b-120">
+		<div class="container">
+			<div class="title-section-ourmenu t-center m-b-22">
+			<span class="tit2 t-center" style="font-size:50px;">
+				Discover
+			</span>
+
+			<h3 class="tit5 t-center m-t-2">
+				Our Categories
+			</h3>
+			<a href="#" class="txt4">
+				View all Categories
+				<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+			</a>
+		</div>
+
+
+					<div class="row">
+					
+					
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<!-- Item our menu -->
+						<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+							<img src="img/9d965f8f-6b85-4be6-9c73-54c8853a0f60_Calligraphy.jpg" alt="IMG-MENU">
+
+							<!-- Button2 -->
+							<a href="#" class="btn2 flex-c-m  ab-c-m " style="padding:20px;text-transform: uppercase;letter-spacing: 3px;">
+								Calligraphy
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<!-- Item our menu -->
+						<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+							<img src="img/Woodwork.jpg" alt="IMG-MENU">
+
+							<!-- Button2 -->
+							<a href="#" class="btn2 flex-c-m  ab-c-m " style="padding:20px;text-transform: uppercase;letter-spacing: 3px;">
+								Woodwork
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<!-- Item our menu -->
+						<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+							<img src="img/Needlecraft.jpg" alt="IMG-MENU">
+
+							<!-- Button2 -->
+							<a href="#" class="btn2 flex-c-m  ab-c-m " style="padding:20px;text-transform: uppercase;letter-spacing: 3px;">
+								Needlecraft
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<!-- Item our menu -->
+						<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+							<img src="img/FlowerArranging.jpg" alt="IMG-MENU">
+
+							<!-- Button2 -->
+							<a href="#" class="btn2 flex-c-m  ab-c-m " style="padding:20px;text-transform: uppercase;letter-spacing: 3px;">
+								FlowerArranging
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<!-- Item our menu -->
+						<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+							<img src="img/Ceramic.jpg" alt="IMG-MENU">
+
+							<!-- Button2 -->
+							<a href="#" class="btn2 flex-c-m  ab-c-m " style="padding:20px;text-transform: uppercase;letter-spacing: 3px;">
+								Ceramic
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+						<!-- Item our menu -->
+						<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+							<img src="img/Blacksmith.jpg" alt="IMG-MENU">
+
+							<!-- Button2 -->
+							<a href="#" class="btn2 flex-c-m  ab-c-m " style="padding:20px;text-transform: uppercase;letter-spacing: 3px;">
+								Blacksmith
+							</a>
+						</div>
+					</div>
+
+					
+
+				
+
+			
+
+	</section>
+	
+	<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(img/Intro2-HomePage.jpg);">
+		<span class="tit2 p-l-15 p-r-15">
+
+		</span>
+
+		<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
+		</h3>
+	</div>
+
+
+
+<!-- Review -->
+<section class="section-review p-t-115">
+	<!-- - -->
+	<div class="title-review t-center m-b-2">
+		<span class="tit2 p-l-15 p-r-15">
+			Customers Say
+		</span>
+
+		<h3 class="tit8 t-center p-l-20 p-r-15 p-t-3">
+			Feedback
+		</h3>
+	</div>
+
+	<!-- - -->
+	<div class="wrap-slick3">
+		<div class="slick3">
+
+		
+
+				<div class="item-slick3 item1-slick3">
+					<div class="wrap-content-slide3 p-b-50 p-t-50">
+						<div class="container">
+
+							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+								<img src="img/c2566916-59ab-48b3-83ed-c8e27c2814e4_2.jpeg" alt="IGM-AVATAR">
+							</div>
+							<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+								Client
+							</div>
+							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+								<p class="t-center txt12 size15 m-l-r-auto">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								</p>
+
+								<div class="star-review fs-18 color0 flex-c-m m-t-12">
+								
+								<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+								<i class="bi bi-star p-l-1" aria-hidden="true"></i><i class="bi bi-star p-l-1" aria-hidden="true"></i>
+								
+									
+								</div>
+
+								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+									Reem Ahmad
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-slick3 item1-slick3">
+					<div class="wrap-content-slide3 p-b-50 p-t-50">
+						<div class="container">
+
+							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+								<img src="img/8f491bd9-c671-43b6-8136-aac735d9cf15_i.jpeg" alt="IGM-AVATAR">
+							</div>
+							<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+								Client
+							</div>
+							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+								<p class="t-center txt12 size15 m-l-r-auto">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								</p>
+
+								<div class="star-review fs-18 color0 flex-c-m m-t-12">
+								
+								<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+								<i class="bi bi-star p-l-1" aria-hidden="true"></i>
+								
+									
+								</div>
+
+								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+									Ahmad Omari
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			
+
+
+		</div>
+
+		<div class="wrap-slick3-dots m-t-30"></div>
+	</div>
+</section>
+
+<section>
+	<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(img/Intro-HomePage.jpg);">
+		<span class="tit2 p-l-15 p-r-15">
+
+		</span>
+
+		<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
+		</h3>
+	</div>
+</section>
+
+
+
+	<section style="background-color: #ededec;">
+	<div class="container py-3" id="ww">
+
+		<div class="title-review t-center m-b-2" style="font-size:75px;">
+			<div class="title-section-ourmenu t-center m-b-22">
+				<span class="tit2 t-center" style="font-size:50px;">
+					Contact Us
+				</span>
+
+
+				<br />
+			
+
+				<a href="#" class="txt4">
+							Contact Us
+						<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+				</a>
+			
+			</div>
+		</div>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53808.189083562684!2d35.84740965!3d32.55252984999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c76916dac0453%3A0x5416e113d81f7d82!2sIrbid!5e0!3m2!1sen!2sjo!4v1667567199946!5m2!1sen!2sjo"></iframe>
+		</div>
+
+
+
+	</div>
+</section>
+
+
+	<!-- Footer -->
+		<!-- ======= Footer ======= -->
+
+	<div class="container my-3">
+		<!-- Footer -->
+		<footer class="text-center text-lg-start text-white">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Links -->
+				<section class="">
+					<!--Grid row-->
+					<div class="row">
+						<!-- Grid column -->
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mx-auto mt-3">
+							<h6 class=" mb-4 font-weight-bold logo text-left">
+								Herfa
+							</h6>
+							<p class="text-left text-white">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+						<!-- Grid column -->
+
+						<hr class="w-100 clearfix d-md-none" style="border-color: white; " />
+
+						<!-- Grid column -->
+						<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 offset-1 mx-auto mt-3  text-left">
+							<h6 class="text-uppercase mb-4 font-weight-bold">Pages</h6>
+
+							<p>
+								<a href="index.html" >Home</a>
+							</p>
+							<p>
+								<a href="#.html" >Categories</a>
+							</p>
+							<p>
+								<a href="#.html" >About</a>
+							</p>
+							<p>
+								<a href="#.html" >Contact</a>
+							</p>
+
+
+						</div>
+
+
+
+						<!-- Grid column -->
+						<hr class="w-100 clearfix d-md-none" style="border-color: white; " />
+
+						<!-- Grid column -->
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mx-auto mt-3 text-left ">
+							<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+							<p class="text-white"><i class="bi bi-house text-white mr-3"></i> <a href="https://goo.gl/maps/XHRPNnn4nBqDHbMF9" target="_blank"> Jordan , Irbid</a></p>
+							<p><i class="bi bi-envelope text-white mr-3"></i><a href="mailto:herfa2022@gmail.com" target="_blank"> Email:herfa2022@gmail.com </a></p>
+							<p><i class="bi bi-telephone text-white mr-3"></i><a href="tel:555-666-7777" target="_blank"> Phone:0790061201 </a></p>
+							<p><i class="bi bi-printer text-white mr-3"></i><a href="fax:+358.555.1234567" target="_blank"> Fax:0790061201 </a></p>
+						</div><!-- Grid column -->
+					</div><!--Grid row-->
+				</section><!-- Section: Links -->
+
+				<hr class="my-3" style="border-color: white; ">
+
+				<!-- Section: Copyright -->
+				<section class="p-3 pt-0">
+					<div class="row d-flex align-items-center">
+						<!-- Grid column -->
+						<div class="col-md-7 col-lg-8 text-center text-md-start">
+							<!-- Copyright -->
+							<div class="p-3 text-left" id="Copyright">
+								&copy; 2022 Copyright:
+								<a class=" logo" href="index.html">Herfa.com</a>
+							</div><!-- Copyright -->
+						</div>
+
+						<!-- Grid column -->
+						<div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+							<!-- Facebook -->
+							<a class="btn btn-outline-danger btn-floating m-1 " target="_blank" href="https://www.facebook.com/">
+								<i class="bi bi-facebook"></i>
+							</a>
+
+							<!-- Twitter -->
+							<a class="btn btn-outline-danger btn-floating m-1 " target="_blank" href="https://twitter.com/">
+								<i class="bi bi-twitter"></i>
+							</a>
+
+							<!-- linkedin -->
+							<a class="btn btn-outline-danger btn-floating m-1" target="_blank" href="https://www.linkedin.com/">
+								<i class="bi bi-linkedin"></i>
+							</a>
+
+							<!-- Instagram -->
+							<a class="btn btn-outline-danger btn-floating m-1 " target="_blank" href="https://www.instagram.com/">
+								<i class="bi bi-instagram"></i>
+							</a>
+						</div><!-- Grid column -->
+					</div>
+				</section><!-- Section: Copyright -->
+			</div><!-- Grid container -->
+		</footer><!-- Footer -->
+	</div><!-- End of .container -->
+<br>
+<br>
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection1 -->
+	<div id="dropDownSelect1"></div>
+
+	<!-- Modal Video 01-->
+	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<div class="modal-dialog" role="document" data-dismiss="modal">
+			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+
+			<div class="wrap-video-mo-01">
+				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
+				<div class="video-mo-01">
+					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+<script>
+		const counters = document.querySelectorAll('.counter');
+		const section = document.getElementById('sectionAboutUs');
+		let started = false; // Function Started ? No
+
+		window.onscroll = function () {
+
+			if (window.scrollY >= section.offsetTop) {
+				if (!started) {
+					counters.forEach((counter) => startCount(counter));
+				}
+				started = true;
+
+			}
+		};
+		function startCount(e1) {
+			let goal = e1.dataset.goal;
+			let count = setInterval(() => {
+
+				const c = +e1.innerText;
+				const increment = goal / 950;
+
+				if (c < goal) {
+					e1.innerText = Math.ceil(c + increment);
+				} else {
+					e1.innerText = goal;
+				}
+
+			}, 10);
+		}
+	</script>
+</body>
+</html>
